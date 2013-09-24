@@ -65,7 +65,7 @@ $html = $report->getHtml("report_asset.php?id={$request->getJsessionid()}&uri=",
 		</div>
 	</div>
 <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
-<script type="text/javascript" src="https://jasper.illuminateed.com:8443/jasperserver-pro/reportresource?resource=com/jaspersoft/jasperreports/highcharts/charts/services/default.service.js"></script>
+<script type="text/javascript" src="<?php echo Illuminate\Jasper::$url ?>/reportresource?resource=com/jaspersoft/jasperreports/highcharts/charts/services/default.service.js"></script>
 <script type="text/javascript" src="js/JasperReportPaginator.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
