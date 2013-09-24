@@ -43,6 +43,9 @@ $html = $report->getHtml("report_asset.php?id={$request->getJsessionid()}&uri=",
 <head>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="<?php echo Illuminate\Jasper::$url ?>reportresource?resource=com/jaspersoft/jasperreports/highcharts/charts/services/default.service.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -64,8 +67,7 @@ $html = $report->getHtml("report_asset.php?id={$request->getJsessionid()}&uri=",
 			</div>
 		</div>
 	</div>
-<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
-<script type="text/javascript" src="<?php echo Illuminate\Jasper::$url ?>/reportresource?resource=com/jaspersoft/jasperreports/highcharts/charts/services/default.service.js"></script>
+
 <script type="text/javascript" src="js/JasperReportPaginator.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
