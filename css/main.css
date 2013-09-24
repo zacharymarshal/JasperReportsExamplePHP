@@ -1,0 +1,10 @@
+body {
+	padding-top: 25px;
+}
+
+.jrPage {
+	display: none;
+}
+.jasper_report_container .pagination {
+	display: none;
+}
