@@ -1,0 +1,9 @@
+{
+  "require": {
+    "silex/silex": "1.*",
+    "lightster/assetrinc": "0.0.7",
+    "lightster/lstr-silex": "0.0.9",
+    "zacharyrankin/douglas": "1.*",
+    "mustache/silex-provider": "1.*"
+  }
+}

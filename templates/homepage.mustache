@@ -1,0 +1,12 @@
+{{>_header}}
+
+<div class="container">
+  <h1>Jasper Reports w/ Douglas</h1>
+  <p class="lead">Use this page as an example of how you can use <a href="https://github.com/zacharyrankin/douglas">zacharyrankin/douglas</a> to embed jasper reports into your PHP project.</p>
+  {{>_jasperReportForm}}
+  {{#reportHtml}}
+  {{>_jasperReportContainer}}
+  {{/reportHtml}}
+</div>
+
+{{>_footer}}
