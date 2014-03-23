@@ -5,16 +5,16 @@ require 'vendor/autoload.php';
 use Silex\Application;
 
 use Mustache\Silex\Provider\MustacheServiceProvider;
-use Lstr\Silex\Provider\AssetServiceProvider;
-use Lstr\Silex\Provider\ConfigServiceProvider;
+use Lstr\Silex\Asset\AssetServiceProvider;
+use Lstr\Silex\Config\ConfigServiceProvider;
 
 use Douglas\Request\Report;
 
 $app = new Application();
 $app->register(new ConfigServiceProvider);
-$app['config'] = $app['lstr.config']->load(array(
+$app['config'] = $app['lstr.config']->load([
     __DIR__ . '/config/dev.php',
-));
+]);
 $app['debug'] = $app['config']['debug'];
 $app->register(new AssetServiceProvider);
 $app['lstr.asset.path'] = [
@@ -41,18 +41,18 @@ $app->get('/', function (Application $app) {
     if ($name) {
         $pdf = $app['request']->query->has('pdf');
         $format = ($pdf ? Report::FORMAT_PDF : Report::FORMAT_HTML);
-        $parameters = array(
+        $parameters = [
             'j_username'     => $app['config']['jasper.username'],
             'j_password'     => $app['config']['jasper.password'],
             'name'           => $name,
-        );
+        ];
 
-        $report = new Report(array(
+        $report = new Report([
             'jasper_url' => $app['config']['jasper.url'],
             'report_url' => '/Reports/HelloWorld',
             'parameters' => $parameters,
             'format'     => $format,
-        ));
+        ]);
 
         $key = md5(serialize($parameters));
         $file_name = "{$report->getPrettyUrl()}_{$key}.{$format}";
