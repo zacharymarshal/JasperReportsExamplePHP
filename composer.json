@@ -1,0 +1,9 @@
+{
+  "require": {
+    "silex/silex": "1.*",
+    "lightster/lstr-silex-config": "0.*",
+    "lightster/lstr-silex-asset": "0.*",
+    "zacharyrankin/douglas": "1.*",
+    "mustache/silex-provider": "1.*"
+  }
+}
