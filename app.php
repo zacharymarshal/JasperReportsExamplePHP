@@ -18,7 +18,9 @@ $app['config'] = $app['lstr.config']->load([
 $app['debug'] = $app['config']['debug'];
 $app->register(new AssetServiceProvider);
 $app['lstr.asset.path'] = [
-    '' => __DIR__ . '/assets'
+    'app'    => __DIR__ . '/assets/app',
+    'lib'    => __DIR__ . '/assets/lib',
+    'vendor' => __DIR__ . '/assets/vendor',
 ];
 $app->register(new MustacheServiceProvider, [
     'mustache.path'    => __DIR__ . '/templates',

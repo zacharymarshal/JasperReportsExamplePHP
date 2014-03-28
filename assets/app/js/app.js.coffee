@@ -1,4 +1,4 @@
-#=require ../../lib/JasperReportPaginator/js/JasperReportPaginator.js.coffee
+#=require /lib/JasperReportPaginator/js/JasperReportPaginator.js.coffee
 $ ->
   $("#jasper_report table td > br").remove()
   paginator = new JasperReportPaginator()
