@@ -408,59 +408,59 @@
         },
         {
             "name": "silex/silex",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Silex.git",
-                "reference": "47cc7d6545450ef8a91f50c04e8c7b3b04fceae9"
+                "reference": "aed7cb81eef9ba1082204027a0e3b60440a212e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Silex/zipball/47cc7d6545450ef8a91f50c04e8c7b3b04fceae9",
-                "reference": "47cc7d6545450ef8a91f50c04e8c7b3b04fceae9",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/aed7cb81eef9ba1082204027a0e3b60440a212e0",
+                "reference": "aed7cb81eef9ba1082204027a0e3b60440a212e0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "pimple/pimple": "~1.0",
-                "symfony/event-dispatcher": ">=2.3,<2.5-dev",
-                "symfony/http-foundation": ">=2.3,<2.5-dev",
-                "symfony/http-kernel": ">=2.3,<2.5-dev",
-                "symfony/routing": ">=2.3,<2.5-dev"
+                "symfony/event-dispatcher": ">=2.3,<2.6-dev",
+                "symfony/http-foundation": ">=2.3,<2.6-dev",
+                "symfony/http-kernel": ">=2.3,<2.6-dev",
+                "symfony/routing": ">=2.3,<2.6-dev"
             },
             "require-dev": {
-                "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
+                "doctrine/dbal": "~2.2",
                 "monolog/monolog": "~1.4,>=1.4.1",
                 "phpunit/phpunit": "~3.7",
                 "swiftmailer/swiftmailer": "5.*",
-                "symfony/browser-kit": ">=2.3,<2.5-dev",
-                "symfony/config": ">=2.3,<2.5-dev",
-                "symfony/css-selector": ">=2.3,<2.5-dev",
-                "symfony/debug": ">=2.3,<2.5-dev",
-                "symfony/dom-crawler": ">=2.3,<2.5-dev",
-                "symfony/finder": ">=2.3,<2.5-dev",
-                "symfony/form": ">=2.3,<2.5-dev",
-                "symfony/locale": ">=2.3,<2.5-dev",
-                "symfony/monolog-bridge": ">=2.3,<2.5-dev",
-                "symfony/options-resolver": ">=2.3,<2.5-dev",
-                "symfony/process": ">=2.3,<2.5-dev",
-                "symfony/security": ">=2.3,<2.5-dev",
-                "symfony/serializer": ">=2.3,<2.5-dev",
-                "symfony/translation": ">=2.3,<2.5-dev",
-                "symfony/twig-bridge": ">=2.3,<2.5-dev",
-                "symfony/validator": ">=2.3,<2.5-dev",
+                "symfony/browser-kit": ">=2.3,<2.6-dev",
+                "symfony/config": ">=2.3,<2.6-dev",
+                "symfony/css-selector": ">=2.3,<2.6-dev",
+                "symfony/debug": ">=2.3,<2.6-dev",
+                "symfony/dom-crawler": ">=2.3,<2.6-dev",
+                "symfony/finder": ">=2.3,<2.6-dev",
+                "symfony/form": ">=2.3,<2.6-dev",
+                "symfony/locale": ">=2.3,<2.6-dev",
+                "symfony/monolog-bridge": ">=2.3,<2.6-dev",
+                "symfony/options-resolver": ">=2.3,<2.6-dev",
+                "symfony/process": ">=2.3,<2.6-dev",
+                "symfony/security": ">=2.3,<2.6-dev",
+                "symfony/serializer": ">=2.3,<2.6-dev",
+                "symfony/translation": ">=2.3,<2.6-dev",
+                "symfony/twig-bridge": ">=2.3,<2.6-dev",
+                "symfony/validator": ">=2.3,<2.6-dev",
                 "twig/twig": ">=1.8.0,<2.0-dev"
             },
             "suggest": {
-                "symfony/browser-kit": ">=2.3,<2.5-dev",
-                "symfony/css-selector": ">=2.3,<2.5-dev",
-                "symfony/dom-crawler": ">=2.3,<2.5-dev",
-                "symfony/form": ">=2.3,<2.5-dev"
+                "symfony/browser-kit": ">=2.3,<2.6-dev",
+                "symfony/css-selector": ">=2.3,<2.6-dev",
+                "symfony/dom-crawler": ">=2.3,<2.6-dev",
+                "symfony/form": ">=2.3,<2.6-dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -490,7 +490,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2013-10-30 08:53:26"
+            "time": "2014-03-29 14:15:59"
         },
         {
             "name": "symfony/debug",
